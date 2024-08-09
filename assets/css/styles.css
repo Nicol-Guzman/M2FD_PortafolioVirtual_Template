@@ -1,0 +1,500 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* BOOTSTRAP ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 218, 218);
+    background: linear-gradient(135deg, rgba(255, 218, 218, 1) 0%, rgba(255, 254, 248, 1) 40%, rgba(255, 253, 247, 1) 60%, rgba(255, 218, 218, 1) 100%);
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* PAGE COLORS */
+.first-color {
+    background: #ffc8c8;
+}
+
+.second-color {
+    background: #ff9999;
+}
+
+.third-color {
+    background: #444f5a;
+}
+
+.fourth-color {
+    background: #3e4149;
+}
+
+.fifth-color {
+    background: #70747c;
+}
+
+/* HEADER CSS */
+.navbar {
+    box-shadow: 0px 6px 0px rgba(255, 153, 153, 1);
+    padding: 15px 0 20px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-brand {
+    font-family: "Nunito";
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff9999, #fff, #ff9999, #fff);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-wave 5s ease infinite;
+}
+
+.nav-link {
+    padding: 0 15px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #fff !important;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#navitems li a {
+    font-family: "Nunito";
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+}
+
+#list1,
+#list2,
+#list3,
+#list4 {
+    margin-right: 25px;
+}
+
+#navitems li a:hover {
+    background: #fff;
+    color: #ff9999;
+    box-shadow: 2px 2px 0px rgba(255, 153, 153, 1);
+}
+
+/* MAIN CSS */
+#welcome {
+    padding: 20px;
+}
+
+#welcomeInfo {
+    margin-top: 150px;
+}
+
+.welcome-image {
+    max-width: 100%;
+    height: auto;
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 8px rgba(255, 153, 153, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 153, 153, 0.8);
+}
+
+#description .card {
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #3e4149;
+    padding: 15px;
+    box-shadow: 5px 5px 0px rgba(255, 153, 153, 1), 10px 10px 0px rgba(255, 200, 200, 1);
+}
+
+#description .card-title {
+    font-size: 4.5vw;
+    color: #fff;
+    font-family: "Nunito";
+    font-weight: 700;
+    text-shadow: 2px 2px 1px rgba(255, 153, 153, 0.8);
+    line-height: 1;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+#description .card-text {
+    text-align: justify;
+    color: #fff;
+    font-size: large;
+}
+
+#about {
+    padding: 30px;
+}
+
+#titleContainer {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgb(62, 65, 73);
+    margin-top: 10px 20px;
+    padding: 20px 30px;
+    box-shadow: 5px 5px 0px rgba(255, 153, 153, 1), 10px 10px 0px rgba(255, 200, 200, 1);
+}
+
+#mainTitle {
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Nunito";
+    font-weight: 700;
+    text-shadow: 3px 3px 1px rgba(255, 153, 153, 1);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#aboutDescription p {
+    color: #3e4149;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.sectionTitle {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: #3e4149;
+    font-family: "Nunito";
+    font-weight: 700;
+    text-shadow: 3px 3px 1px rgba(255, 200, 200, 1);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#about .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 8px;
+    background: #ffc8c8;
+    border: 2px solid #3e4149;
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px rgb(160, 65, 65, 1);
+}
+
+#about .card-body {
+    text-align: center;
+}
+
+#about .card-title {
+    font-family: "Nunito";
+    color: #3e4149;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+#about .card-text {
+    color: #3e4149;
+    font-size: medium;
+    font-weight: 500;
+    text-align: left;
+    transition: opacity 0.3s ease;
+}
+
+#about .card-text p {
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+#arrow {
+    margin-right: 10px;
+}
+
+.card-text.d-none {
+    opacity: 0;
+    display: none;
+}
+
+.card-text.d-block {
+    opacity: 1;
+    display: block;
+}
+
+#revealButton1,
+#revealButton2,
+#revealButton3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #3e4149 !important;
+    border: none;
+}
+
+#revealButton1,
+#revealButton2,
+#revealButton3,
+i {
+    margin-left: 10px;
+}
+
+#mySkills {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#skillsContainer {
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 1);
+    border-radius: 10px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 2px solid #3e4149;
+    background: #ffc8c8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tab button {
+    font-family: "Nunito";
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 33.33333333333333333333333%;
+    color: #3e4149;
+    background: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ff9999;
+}
+
+.tab button.active {
+    color: #fff;
+    background: #3e4149;
+}
+
+.tabContent {
+    background: #fff;
+    display: none;
+    padding: 10px 15px;
+    border: 2px solid #3e4149;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: fadeEffect 0.5s;
+}
+
+.tabContent h3 {
+    font-family: "Nunito";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tabContent p {
+    font-size: large;
+    background: #3e4149;
+    color: #fff;
+    padding: 10px;
+}
+
+/* SCROLL UP BUTTON STYLES */
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3e4149;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px rgba(251, 86, 96, 1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 24px;
+}
+
+#scrollUpBtn i {
+    margin: 0;
+}
+
+/* Animation Effects */
+
+@keyframes gradient-wave {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* MEDIAS y SCREENS */
+
+/* ESCRITORIO Y PANTALLAS GRANDES */
+/* @media(min-width:1081) {
+
+} */
+
+
+/* TABLET */
+@media screen and (min-width: 721px) and (max-width: 1080) {
+
+    #navbarSupportedContent {
+        text-align: center;
+    }
+
+    #navitems {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #navitems li {
+        margin: 0;
+    }
+
+    #navitems li a {
+        padding-left: 30;
+        padding-right: 30;
+    }
+
+    #description .card-title {
+        font-size: 4vw;
+    }
+
+    #mainTitle {
+        font-size: 7vw;
+        text-shadow: 2px 2px 1px rgba(255, 153, 153, 1);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+    #navbarSupportedContent {
+        text-align: center;
+    }
+
+    #navitems {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #navitems li {
+        margin: 0;
+    }
+
+    #navitems li a {
+        padding-left: 30;
+        padding-right: 30;
+        margin: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    #description .card {
+        padding: 25px;
+    }
+
+    #description .card-title {
+        font-size: 8.5vw;
+    }
+
+    #description .card-text {
+        font-size: medium;
+    }
+
+    #titleContainer {
+        margin-top: 10px;
+    }
+
+    #mainTitle {
+        font-size: 7.5vw;
+        text-shadow: 1.5px 1.5px 1px rgba(255, 153, 153, 1);
+    }
+
+    #aboutDescription p {
+        font-size: medium;
+    }
+
+}
