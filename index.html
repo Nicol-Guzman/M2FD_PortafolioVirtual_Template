@@ -52,36 +52,24 @@
 
     </header>
 
-    <main>
-
-        <section id="welcome" class="container">
-            <div class="row align-items-center" id="welcomeInfo">
-                <div class="col-md-5 mb-4 me-5 mb-md-0" id="avatar1">
-                    <img src="./assets/img/avatar.png" alt="Welcome Image" class="welcome-image rounded-circle">
-                </div>
-
-                <div class="col-md-6" id="description">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-title">Nicol Guzman Labarca</p>
-                            <br>
-                            <hr class="separator">
-                            <br>
-                            <p class="card-text">Bienvenido a mi portafolio virtual. Soy Nicol Guzmán Labarca, diseñadora e ilustradora independiente especializada en las areas de branding e ilustración digital.</p>
-
-                            <p class="card-text">¡Explora mi portafolio para descubrir cómo puedo ayudarte a dar vida a tus ideas!</p>
-
-                        </div>
-                    </div>
+    <section id="profileSection">
+        <video autoplay muted loop playsinline id="backgroundVideo">
+            <source src="./assets/vids/sakurasfalling.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-12">
+                    <img src="./assets/img/avatar.png" alt="avatar">
+                    <h1>Nicol Guzmán</h1>
+                    <p>Diseñadora e Ilustradora Independiente</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <main>
 
         <br>
-        <br>
-        <br>
-        <br>
-
         <section id="about" class="container">
             <div class="row">
                 <div class="col-md-12 mb-4 me-5 mb-md-0" id="titleContainer">
@@ -160,7 +148,7 @@
             </div>
 
         </section>
-              
+
         <section id="skills" class="container">
             <div class="row">
                 <div class="col-md-12 mb-4 me-5 mb-md-0" id="titleContainer">
@@ -176,7 +164,7 @@
                             <button class="tabLinks" onclick="openTab(event, 'tecnicas')">Técnicas</button>
                             <button class="tabLinks" onclick="openTab(event, 'intereses')">Intereses</button>
                         </div>
-    
+
                         <div id="blandas" class="tabContent">
                             <h3>Blandas</h3>
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Pensamiento crítico</p>
@@ -185,7 +173,7 @@
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Atención al detalle.</p>
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Adaptabilidad</p>
                         </div>
-    
+
                         <div id="tecnicas" class="tabContent">
                             <h3>Técnicas</h3>
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Programación</p>
@@ -195,7 +183,7 @@
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Bases de datos SQL.</p>
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Desarrollo de software.</p>
                         </div>
-    
+
                         <div id="intereses" class="tabContent">
                             <h3>Intereses</h3>
                             <p><i id="arrow" class="bi bi-caret-right-fill"></i>Diseño gráfico.</p>
