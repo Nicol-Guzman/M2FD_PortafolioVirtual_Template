@@ -150,7 +150,7 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
 
 #profileSection .container {
     position: relative;
@@ -176,6 +176,7 @@ html {
 #profileSection h1 {
     font-family: "Nunito";
     text-transform: uppercase;
+    letter-spacing: 12px;
     font-size: 3.2rem;
     font-weight: 700;
     color: #fff;
@@ -184,7 +185,25 @@ html {
 
 #profileSection p {
     font-size: 1.25rem;
+    letter-spacing: 10px;
     color: #fff;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+}
+
+.social-links i {
+    color: #fff;
+    vertical-align: middle;
+    transition: color 0.4s ease;
+    
+}
+
+.social-links i:hover {
+    color: #ff9999;
 }
 
 #about {
@@ -236,6 +255,19 @@ html {
     margin-top: 30px;
 }
 
+#aboutDescription button {
+    background: #3e4149;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#aboutDescription button:hover {
+    background: #ff9999;
+    color: #3e4149;
+    font-weight: 600;
+    transform: scale(1.08);
+}
+
 #about .card {
     display: flex;
     flex-direction: column;
@@ -244,10 +276,11 @@ html {
     background: #ffc8c8;
     border: 2px solid #3e4149;
     box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 #about .card:hover {
+    background: #ff9999;
     transform: scale(1.05);
     box-shadow: 0px 0px 4px rgb(160, 65, 65, 1);
 }
@@ -372,6 +405,188 @@ i {
     background: #3e4149;
     color: #fff;
     padding: 10px;
+    transition: transform 0.4s ease, border-radius 0.4s ease, color 0.4s ease, background 0.4s ease, font-weight 0.4s ease;
+}
+
+.tabContent p:hover {
+    transform: scale(1.08);
+    border-radius: 8px;
+    color: #3e4149;
+    background: #ff9999;
+    font-weight: 700;
+}
+
+#coderSkills{
+    margin-bottom: 50px;
+}
+
+#skillsCard {
+    width: 100%;
+    background-color: #ffc8c8;
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
+    border-radius: 12px;
+    /* overflow: hidden; */
+    padding: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#skillsCard:hover {
+    background: #ff9999;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px rgb(160, 65, 65, 1);
+}
+
+#skillsHeader {
+    font-family: "Nunito";
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #3e4149;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#skillsBody {
+    font-weight: 600;
+    padding: 20px;
+    padding-top: 35px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skillName {
+    width: 100px;
+    font-size: 16px;
+}
+
+.skillLevel {
+    width: 160px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+.skillPercent {
+    background-color: #3e4149;
+    height: 100%;
+    max-width: 100%;
+}
+
+.skillPercentNumber {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.bannerContainer {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#imgBannerGallery {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay .text {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay h2 {
+    font-family: "Nunito";
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: large;
+}
+
+.bannerContainer:hover .overlay {
+    opacity: 1;
+}
+
+.bannerContainer:hover .overlay .text {
+    opacity: 1;
+}
+
+.gallery img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
+    transition: transform 0.4s ease, border-radius 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 0px 4px rgb(160, 65, 65, 1);
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+#projectsButton {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #ffc8c8;
+    color: #3e4149;
+    padding-top: 30px;
+    border: 2px solid #3e4149;
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+
+#projectsButton:hover {
+    transform: scale(1.08);
+    background: #ff9999;
+}
+
+#githubIcon {
+    font-size: 100px;
+    color: #fff;
+}
+
+#download {
+    margin-right: 15px;
 }
 
 /* SCROLL UP BUTTON STYLES */
@@ -489,7 +704,7 @@ i {
     .navbar-brand {
         font-size: 1.4rem;
     }
-    
+
     #titleContainer {
         margin-top: 10px;
     }
