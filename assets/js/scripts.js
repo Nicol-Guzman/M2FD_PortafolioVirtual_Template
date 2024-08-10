@@ -43,3 +43,10 @@ function openTab(evt, tabName) {
 };
 
 document.querySelector(".tab button").click();
+
+document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', function() {
+        const modalImg = document.querySelector('.modal-img');
+        modalImg.src = this.getAttribute('data-bs-src');
+    });
+});
