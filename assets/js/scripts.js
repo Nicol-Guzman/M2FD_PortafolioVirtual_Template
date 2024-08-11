@@ -1,4 +1,5 @@
 // SCROLL UP BUTTON JAVASCRIPT
+// SCROLL UP BUTTON JAVASCRIPT
 const scrollUpBtn = document.getElementById('scrollUpBtn');
 
 window.onscroll = function() {
@@ -15,6 +16,7 @@ scrollUpBtn.onclick = function() {
         behavior: 'smooth'
     });
 };
+
 
 // BOTÓN DAME CLICK DE LA SECCIÓN DE ABOUT
 $('.btn-primary').click(function() {
