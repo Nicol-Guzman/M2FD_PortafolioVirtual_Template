@@ -199,7 +199,7 @@ html {
     color: #fff;
     vertical-align: middle;
     transition: color 0.4s ease;
-    
+
 }
 
 .social-links i:hover {
@@ -416,7 +416,7 @@ i {
     font-weight: 700;
 }
 
-#coderSkills{
+#coderSkills {
     margin-bottom: 50px;
 }
 
@@ -549,6 +549,7 @@ i {
     width: 100%;
     height: auto;
     cursor: pointer;
+    border: 2px solid #3e4149;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
     transition: transform 0.4s ease, border-radius 0.4s ease;
@@ -589,29 +590,68 @@ i {
     margin-right: 15px;
 }
 
+#myFooter {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #3e4149;
+}
+
+#myFooter .row {
+    align-items: center;
+}
+
+#contact-form{
+    margin-bottom: 40px;
+}
+
+.footerForm h2 {
+    font-family: "Nunito";
+    font-weight: 700;
+    color: #ffc8c8;
+}
+
+#formElement {
+    color: #fff;
+}
+
+#formButton {
+    font-weight: 600;
+    color: #3e4149;
+    background: #ffc8c8;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+#formButton:hover {
+    color: #fff;
+    background: #ff9999;
+    transform: scale(1.08);
+}
+
 /* SCROLL UP BUTTON STYLES */
 #scrollUpBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3e4149;
+    background: #ff9999;
     color: #fff;
     border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
+    display: none; /* Ocultar el botón al cargar la página */
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 2px 2px 0px rgba(251, 86, 96, 1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 0px #3b3e46;
+    transition: background 0.3s ease, transform 0.3s ease;
     font-size: 24px;
 }
 
 #scrollUpBtn i {
     margin: 0;
 }
+
 
 /* Animation Effects */
 
