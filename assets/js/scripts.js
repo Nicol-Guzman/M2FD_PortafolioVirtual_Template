@@ -20,15 +20,15 @@ scrollUpBtn.onclick = function() {
 
 // BOTÓN DAME CLICK DE LA SECCIÓN DE ABOUT
 $('.btn-primary').click(function() {
-    var $card = $(this).closest('.card-body');
-    var $cardText = $card.find('.card-text');
+    let $card = $(this).closest('.card-body');
+    let $cardText = $card.find('.card-text');
     
     $cardText.toggleClass('d-none d-block');
 });
 
 // TABS DE MIS SKILLS E INTERESES
 function openTab(evt, tabName) {
-    var i, tabContent, tabLinks;
+    let i, tabContent, tabLinks;
 
     tabContent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabContent.length; i++) {
