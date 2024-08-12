@@ -677,6 +677,26 @@ i {
     transform: scale(1.08);
 }
 
+#authority {
+    background: #70747c;
+    box-shadow: 0px -2px 10px rgb(12, 11, 11, 0.6);
+}
+
+#authorityInfo {
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    color: #fff;
+}
+
+#authorityInfo a {
+    color: #ffc8c8;
+    text-decoration: none;
+}
+
+#authorityInfo a:hover {
+    color: #ff9999;
+}
+
 /* SCROLL UP BUTTON STYLES */
 #scrollUpBtn {
     position: fixed;
