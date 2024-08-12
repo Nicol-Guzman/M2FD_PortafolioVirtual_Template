@@ -83,12 +83,13 @@ html {
 .navbar-toggler {
     border: none;
     color: #fff !important;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
 }
 
 #navitems li a {
     font-family: "Nunito";
+    font-size: 1.2rem;
     color: #fff;
     text-transform: uppercase;
     padding-left: 25px;
@@ -96,10 +97,11 @@ html {
     padding-top: 5px;
     padding-bottom: 5px;
     display: inline-block;
-    border-radius: 30px;
+    border: 2px solid #ff9999;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 700;
-    transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+    transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 #list1,
@@ -110,16 +112,17 @@ html {
 }
 
 #navitems li a:hover {
-    background: #fff;
-    color: #ff9999;
-    box-shadow: 2px 2px 0px rgba(255, 153, 153, 1);
+    background: #ffc8c8;
+    color: #3b3e46;
+    box-shadow: 0px 0px 6px rgba(255, 153, 153, 1);
+    transform: scale(1.08);
 }
 
 /* MAIN CSS */
 
 #profileSection {
     position: relative;
-    height: 900px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +161,7 @@ html {
 }
 
 #profileSection img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     border: 2px solid #fff;
     border-radius: 300px;
@@ -170,23 +173,26 @@ html {
 #profileSection img:hover {
     border-radius: 10px;
     transform: scale(1.05);
-    box-shadow: 0px 0px 6px rgba(37, 16, 16, 1);
+    box-shadow: 1px 2px 2px rgba(37, 16, 16, 1);
 }
 
 #profileSection h1 {
     font-family: "Nunito";
     text-transform: uppercase;
     letter-spacing: 12px;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
+    text-shadow: 1px 2px 2px #000000;
 }
 
 #profileSection p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     letter-spacing: 10px;
     color: #fff;
+    text-shadow: 0px 0px 4px #000000;
 }
 
 .social-links a {
@@ -560,6 +566,21 @@ i {
     box-shadow: 0px 0px 4px rgb(160, 65, 65, 1);
 }
 
+.imageTag p {
+    color: #3b3e46;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -10px;
+    background: #ffc8c8;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border: 2px solid #3b3e46;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(255, 153, 153, 0.8);
+}
+
 .modal-img {
     width: 100%;
     height: auto;
@@ -582,8 +603,8 @@ i {
 }
 
 #githubIcon {
-    font-size: 100px;
-    color: #fff;
+    font-size: 60px;
+    color: #3b3e46;
 }
 
 #download {
@@ -598,6 +619,32 @@ i {
 
 #myFooter .row {
     align-items: center;
+}
+
+.contact-info h2 {
+    font-family: "Nunito";
+    font-weight: 700;
+    color: #ffc8c8;
+
+}
+
+.contact-info p {
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-info {
+    margin: 40px 0px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #ffc8c8;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff9999;
 }
 
 #contact-form{
@@ -681,7 +728,7 @@ i {
 
 /* MEDIAS y SCREENS */
 /* TABLET */
-@media screen and (min-width: 721px) and (max-width: 1080) {
+@media screen and (min-width: 721px) and (max-width: 980px) {
 
     #navbarSupportedContent {
         text-align: center;
@@ -695,12 +742,7 @@ i {
     }
 
     #navitems li {
-        margin: 0;
-    }
-
-    #navitems li a {
-        padding-left: 30;
-        padding-right: 30;
+        margin: 15px 0;
     }
 
     #mainTitle {
