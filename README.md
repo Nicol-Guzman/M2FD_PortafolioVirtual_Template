@@ -1,5 +1,5 @@
 # MÓDULO 2 - FINAL DRILLING
 
-Evaluación final del módulo 2.
+Evaluación final del Módulo 2 del Bootcamp Fullstack Javascript Trainee impartido por Edutecno y certificado por SENCE y Talento Digital para Chile.
 
-_**Nota del autor:** El sitio estático de github esta activo y varios elementos tiene hover._
+_**Nota del autor:** El sitio estático de github esta activo y varios elementos tienen hover._
